@@ -1,2 +1,16 @@
+@import "theme-editor.css";
 @import url('./main-layout.css');
 @import url('./views/home-view.css');
+
+@media all and (max-width: 1100px) {
+  .role-view.editing .toolbar,
+  .role-view.editing .role-grid {
+    display: none;
+  }
+
+  .users-view.editing .toolbar,
+  .users-view.editing .users-grid {
+     display: none;
+   }
+
+}

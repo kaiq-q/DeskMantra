@@ -1,0 +1,11 @@
+/*
+ * This file has been created by the Vaadin Theme Editor. Please note that
+ * manual changes to individual CSS properties may be overwritten by the theme editor.
+ */
+vaadin-button { border-color:rgba(102,102,255,1); }
+
+vaadin-side-nav-item[active]::part(item) {
+  font-size:var(--lumo-font-size-xxs);
+  font-weight:bold;
+
+}
