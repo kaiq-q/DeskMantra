@@ -5,6 +5,7 @@ import com.example.application.security.Emails;
 import com.example.application.services.RoleService;
 import com.example.application.views.MainLayout;
 import com.vaadin.flow.component.Composite;
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dependency.Uses;
 import com.vaadin.flow.component.html.H1;
@@ -14,10 +15,14 @@ import com.vaadin.flow.component.orderedlayout.FlexLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.security.PermitAll;
+
 import javax.mail.MessagingException;
 
 @PageTitle("Home")
 @Route(value = "", layout = MainLayout.class)
+@PermitAll
 @Uses(Icon.class)
 public class HomeView extends Composite<VerticalLayout> {
 
@@ -28,6 +33,8 @@ public class HomeView extends Composite<VerticalLayout> {
     VerticalLayout layout = new VerticalLayout();
     private FlexLayout dashboardLayout;
     private int chartCount = 0;
+
+
 
     public HomeView() {
 
