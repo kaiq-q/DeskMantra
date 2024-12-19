@@ -38,7 +38,7 @@ public class HomeView extends Composite<VerticalLayout> {
 
     public HomeView() {
 
-
+        //test
 
         getContent().setWidth("100%");
         getContent().getStyle().set("flex-grow", "1");
